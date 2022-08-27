@@ -1,0 +1,33 @@
+import java.util.*;
+  
+public class Main {
+  public static void main(String[] args){
+    Scanner in=new Scanner(System.in);
+    int num = in.nextInt()+1, answer=0;
+    Stack<Integer> bag=new Stack<>();
+    int boardArr[][] =new int[num][num];
+    for(int i=1;i<num;i++){
+      for(int j=1;j<num;j++)
+          boardArr[i][j]=in.nextInt();
+    }
+    int moveS=in.nextInt();
+    int[] moveArr=new int[moveS];
+    for(int i=0;i<moveS;i++) moveArr[i]=in.nextInt();
+    
+    for(int i=0;i<moveS;i++){
+      for(int j=i;j<num;j++){
+        if(boardArr[j][moveArr[i]]!=0){
+          int tmp=boardArr[j][moveArr[i]];
+          boardArr[j][moveArr[i]]=0;
+          if(!bag.empty()&&tmp==bag.peek()){
+            bag.pop();
+            answer+=2;
+          }else
+            bag.push(boardArr[j][moveArr[i]]);
+          break;
+        }
+      }
+    }
+    System.out.println(answer);
+  }
+}
