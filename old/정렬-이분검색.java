@@ -1,4 +1,4 @@
-/*
+package old;/*
 문제 - 이분검색
 
 설명 :
@@ -19,7 +19,7 @@
 */
 import java.util.*;
 
-class Main{
+class MainSort{
 	public static void main(String args[]){
     	Scanner in=new Scanner(System.in);
       	int n=in.nextInt(), m=in.nextInt();

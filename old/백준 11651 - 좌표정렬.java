@@ -1,3 +1,5 @@
+package old;
+
 import java.util.*;
 
 class Compare implements Comparable<Compare>{
@@ -10,7 +12,7 @@ class Compare implements Comparable<Compare>{
 		else return this.y-c.y;
 	}
 }
-class Main{
+class MainCompare{
 	public static void main (String args[]){
 		Scanner in= new Scanner(System.in);
 		int n = in.nextInt();
