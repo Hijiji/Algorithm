@@ -6,7 +6,7 @@ public class SejunAverage {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         //사이즈에 맞는 배열 생성
-        int A[]=new int[N];
+        int[] A=new int[N];
         //max 변수 생성
         long max=0;
 
