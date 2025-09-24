@@ -1,3 +1,5 @@
+package 백준.Bronze.평균_1546;
+
 import java.util.Scanner;
 
 public class Main {

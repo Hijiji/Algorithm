@@ -1,3 +1,5 @@
+package 백준.Bronze.숫자의합_11720;
+
 import java.util.Scanner;
 
 public class Main{
