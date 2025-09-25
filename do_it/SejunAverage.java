@@ -1,4 +1,4 @@
-package 백준_src;
+package do_it;
 import java.util.Scanner;
 
 public class SejunAverage {
