@@ -1,4 +1,4 @@
-package 구간합구하기4_11659
+package 백준.Silver.구간합구하기4_11659;
 
 import java.util.Scanner;
 
