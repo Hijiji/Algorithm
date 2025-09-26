@@ -7,7 +7,7 @@ public class Main {
         int N = sc.nextInt();
      
         //변수 초기화
-        int count =1;
+        int count =0;
         int sum =1;
         int start=1;
         int end = 1;
@@ -16,7 +16,7 @@ public class Main {
         //합산값이 N 보다 작으면 뒷포인터 ++
         // 크면 앞포인터 ++
         // 같으면 둘다 ++,count++
-        while(end!=N){
+        while(start<=N){
             if (sum==N) {
                 end++;
                 count++;
