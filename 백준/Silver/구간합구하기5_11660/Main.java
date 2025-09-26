@@ -1,3 +1,5 @@
+package 백준.Silver.구간합구하기5_11660;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
