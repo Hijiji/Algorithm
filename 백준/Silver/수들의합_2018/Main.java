@@ -1,3 +1,5 @@
+package 백준.Silver.수들의합_2018;
+
 import java.util.Scanner;
 
 public class Main {
