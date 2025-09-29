@@ -10,18 +10,22 @@ public class 좋은수구하기_1253 {
         int N = Integer.parseInt(br.readLine());
         int count = 0;
         int[] A = new int[N];
-        for(int i = ; i < N; i++){
+        for(int i = 0; i < N; i++){
             A[i]=Integer.parseInt(br.readLine());
         }
         for(int i = 1; i < N; i++){
             int l=0;
-            int m=N;
+            int m=N-1;
             while(l<m) {
                 if (A[i]==A[l]+A[m]){
                     count++;
-
+                }else if(A[i]>A[l]+A[m]){
+                    m--;
+                }else{
+                    l++;
                 }
             }
         }
+        System.out.println(count);
     }
 }
