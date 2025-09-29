@@ -17,13 +17,19 @@ public class 좋은수구하기_1253 {
             A[i]=Long.parseLong(st.nextToken());
         }
         Arrays.sort(A);
-        for(int i = 1; i < N; i++){
+        for(int i = 0; i < N; i++){
             int l=0;
             int m=N-1;
             while(l<m) {
-                if (A[i]==A[l]+A[m]){
+                if(A[i]==A[l]+A[m]) {
+                    if(l!=i&&m!=i){
                         count++;
                         break;
+                    }else if (l == i) {
+                        l++;
+                    } else if (m == i) {
+                        m--;
+                    }
                 }else if(A[i]>A[l]+A[m]){
                     l++;
 
