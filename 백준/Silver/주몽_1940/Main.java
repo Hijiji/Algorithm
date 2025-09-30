@@ -1,3 +1,4 @@
+package 백준.Silver.주몽_1940;
 
 import java.io.BufferedReader;
 import java.io.IOException;
