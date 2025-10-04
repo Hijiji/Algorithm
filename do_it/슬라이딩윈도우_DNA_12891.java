@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+/**
+ * todo one more
+ */
 public class 슬라이딩윈도우_12891 {
     public static void main (String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
