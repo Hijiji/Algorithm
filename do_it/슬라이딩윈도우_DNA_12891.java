@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * todo one more
+ * todo 다시
  */
-public class 슬라이딩윈도우_12891 {
+public class 슬라이딩윈도우_DNA_12891 {
     public static void main (String[] args)throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

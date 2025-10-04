@@ -1,7 +1,7 @@
 package do_it;
 import java.util.Scanner;
 
-public class SejunAverage {
+public class 평균구하기_1546 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

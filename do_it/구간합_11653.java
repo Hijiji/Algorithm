@@ -2,7 +2,7 @@ package do_it;
 
 import java.util.Scanner;
 
-public class 구간합11653 {
+public class 구간합_11653 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
