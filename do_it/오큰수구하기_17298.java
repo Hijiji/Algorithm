@@ -26,8 +26,11 @@ public class 오큰수구하기_17298 {
         {
             result[stack.pop()] =-1;
         }
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         for(int i=0;i<N;i++){
-            System.out.print(result[i]+" ");
+            bw.write(result[i]+" ");
         }
+        bw.write("\n");
+        bw.flush();
     }
 }
