@@ -12,8 +12,9 @@ public class 스택오름차순수열_1874 {
         }
         int[] c = new int[N];
         Stack<Integer> stack = new Stack<>();
-        StringBuffer bf = new StringBuffer();
         int cN = 1;
+        StringBuffer bf = new StringBuffer();
+        boolean result = true;
         for(int i=0; i<N; i++){
             if(a[i]>=cN) {
                 while (a[i] >= cN) {
@@ -23,16 +24,18 @@ public class 스택오름차순수열_1874 {
                 stack.pop();
                 bf.append("-\n");
             }else{
-                int n = stack.pop();
-                if(n>cN) {
+                int b = stack.pop();
+                if(b>a[i]) {
                     System.out.print("NO");
+                    result = false;
+
                     break;
                 }else{
                     bf.append("-\n");
                 }
             }
         }
-        System.out.print(bf.toString());
+        if(result)System.out.print(bf.toString());
     }
 
     //a 랑 c 랑 같은지 비교 : 같으면 넘어감, 다르면 No출력
