@@ -6,6 +6,7 @@
 - 💻 [백준 온라인 저지(BOJ)](https://www.acmicpc.net/)
 - 🎓 인프런 강의 (자료구조 & 알고리즘 중심)
 
+---
 
 # 구간합 공식
 **합배열공식**
@@ -19,3 +20,25 @@
 
 **특정 구간합 계산 공식**
 - D[x1][y2] - D[x1-1][y2] - D[x2][y1-1] + D[x1-1][y1-1]
+
+
+# Deque
+**앞 뒤로 넣고 뺄 수 있는 자료형**</br>
+&nbsp; * 앞, 뒤 데이터 추가/삭제가 잦은 경우 유용함. </br>
+&nbsp;&nbsp;&nbsp; ex) 슬라이드 윈도우에서 최솟값찾기 
+
+- Deque<Node> deque = new LinkedList<>()
+- Deque<Node> deque = new ArrayDeque<>()  : linkedList보다 성능상 우수
+- deque.addFirst(), deque.removeFirst()  : 앞 데이터 관련
+- deque.addLast(), deque.removeLast()  : 뒤데이터 관련
+- deque.getFirst(), deque.getLast()  : 데이터 조회 관련
+
+# Stack
+**후입선출형, 깊이우선탐색(DFS)/백트래킹류의 코테에 효과적** </br>
+push, peek, pop
+
+# Queue
+**선입선출형, 너비우선탐색(BFS)** </br>
+뒤쪽 데이터 관련함수 : rear, add </br>
+앞쪽 데이터 관련함수 : front, poll, peek
+
