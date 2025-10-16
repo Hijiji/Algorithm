@@ -1,9 +1,11 @@
+package old;
+
 import java.util.Scanner;
   
-public class old.백준.Bronze.평균_1546.Main {
+public class Stack1 {
   public static void main(String[] args){
     Scanner in=new Scanner(System.in);
-    char[] a = in.next()toCharArray();
+    char[] a = in.next().toCharArray();
     int k1=0; String answer="";
     for(int i=0;i<a.length;i++){
       if(a[i]=='(')k1++;

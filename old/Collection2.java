@@ -1,14 +1,15 @@
+package old;
 import java.util.*;
   
-public class old.백준.Bronze.평균_1546.Main {
+public class Collection2 {
   public static void main(String[] args){
     Scanner in=new Scanner(System.in);
     int day = in.nextInt();
     int num = in.nextInt();
-    int arr[]=new int[day];
+    int[] arr=new int[day];
     int lt=0;
     HashMap<Integer,Integer> map= new HashMap<>();
-    ArrayList<Integer> lis=new ArrayList<>();
+    ArrayList<Integer> list=new ArrayList<>();
     for(int i=0;i<day;i++) arr[i]=in.nextInt();
     for(int i=0;i<num-1;i++)map.put(arr[i],map.getOrDefault(arr[i],0)+1);
     for(int rt=num-1;rt<day;rt++){
@@ -18,7 +19,7 @@ public class old.백준.Bronze.평균_1546.Main {
       if(map.get(arr[lt])==0)map.remove(arr[lt]);
       lt++;
     }
-    for(int a:lis)
-    System.out.print(a+" ");
+    for(int a:list)
+        System.out.print(a+" ");
   }
 }

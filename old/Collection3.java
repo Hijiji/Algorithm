@@ -1,6 +1,7 @@
+package old;
 import java.util.*;
-  
-public class old.백준.Bronze.평균_1546.Main {
+
+public class Collection3 {
   public static void main(String[] args){
     Scanner in=new Scanner(System.in);
     int num = in.nextInt();
