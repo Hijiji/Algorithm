@@ -42,3 +42,10 @@ push, peek, pop
 뒤쪽 데이터 관련함수 : rear, add </br>
 앞쪽 데이터 관련함수 : front, poll, peek
 
+# PriorityQueue
+**우선순위가 놓은 데이터가 먼저나옴**</br>
+내림차순 정렬 : PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());</br>
+사용자 지정 정렬 : </br>
+enqueue()- queue에 새 요소를 삽입 </br>
+dequeue() - queue에서 최대 우선 순위 요소를 삭제하고 그 값을 반환 </br>
+peek() - queue에서 최대 우선순위 요소를 반환 </br>
