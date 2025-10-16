@@ -8,9 +8,18 @@ public class 버블_수정렬하기_2750 {
          for(int i=0;i<N;i++){
              a[i]=sc.nextInt();
          }
-         Arrays.sort(a);
-        for(int i=0;i<N;i++){
-           System.out.println(a[i]);
+         //Arrays.sort(a);
+        for (int i = 0; i < N-1; i++) {
+            for (int j = 0; j < N-1-i; j++) {
+                if(a[j]>a[j+1]){
+                    int temp =a[j];
+                    a[j]=a[j+1];
+                    a[j+1]= temp;
+                }
+            }//for1
+        }//for2
+        for (int i = 0; i < N; i++) {
+            System.out.println(a[i]);
         }
     }
 }
