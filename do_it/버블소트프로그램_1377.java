@@ -2,6 +2,7 @@ package do_it;
 import java.io.*;
 import java.util.*;
 
+//todo 이해필요
 class Box implements Comparable<Box>{
     int value, index;
     public Box(int value, int index){
@@ -14,7 +15,6 @@ class Box implements Comparable<Box>{
     }
 }
 
-}
 public class 버블소트프로그램_1377 {
     public static void main(String[] args)throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
