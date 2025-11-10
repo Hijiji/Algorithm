@@ -1,5 +1,9 @@
 package do_it;
 import java.io.*;
+
+/**
+ * todo 해석 및 재풀이
+ */
 public class 병합정렬_2751 {
     public static int[] A, tmp;
     public static long result;
