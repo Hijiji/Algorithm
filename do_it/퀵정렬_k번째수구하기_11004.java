@@ -6,9 +6,9 @@ public class 퀵정렬_k번째수구하기_11004 {
     public static void quickSort(int[] A, int S, int E, int K){
         if(S<E){
             int pivot = partition(A,S,E);
-            if(pivot==K) return;
-            else if(pivot>K) quickSort(A, S, pivot-1, K);
-            else quickSort(A,pivot+1, E, K);
+            if(pivot==K) return; //k번째수가 pivot이면 종료
+            else if(pivot>K) quickSort(A, S, pivot-1, K); //k가 pivot보다 작으면 왼쪽 그룹만 정렬
+            else quickSort(A,pivot+1, E, K); //k가 pivot보다 크면 오른쪽 그룹만 정렬
         }
     }
 
