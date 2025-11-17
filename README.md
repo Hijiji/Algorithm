@@ -35,16 +35,16 @@
 
 # Stack
 **후입선출형, 깊이우선탐색(DFS)/백트래킹류의 코테에 효과적** </br>
-push, peek, pop
+</br>push, peek, pop
 
 # Queue
 **선입선출형, 너비우선탐색(BFS)** </br>
-뒤쪽 데이터 관련함수 : rear, add </br>
+</br>뒤쪽 데이터 관련함수 : rear, add </br>
 앞쪽 데이터 관련함수 : front, poll, peek
 
 # PriorityQueue
 **우선순위가 놓은 데이터가 먼저나옴**</br>
-내림차순 정렬 : PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());</br>
+</br>내림차순 정렬 : PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());</br>
 사용자 지정 정렬 : </br>
 enqueue()- queue에 새 요소를 삽입 </br>
 dequeue() - queue에서 최대 우선 순위 요소를 삭제하고 그 값을 반환 </br>
@@ -54,10 +54,16 @@ peek() - queue에서 최대 우선순위 요소를 반환 </br>
 
 
 # 버블정렬
-바로 뒷 배열값과 비교하며 뒤로 이동.
+학습내용정리 : https://isjiji.tistory.com/123</br>
+
+인접한 원소와 비교하며 원소 교환</br>
+쉽게 구현이 가능하나 비효율적이라 사용하지 않음</br>
+처음 정렬알고리즘 배울때 유용</br>
+시간복잡도는 O(n^2)
 
 # 선택정렬
-가장 큰수 혹은 작은수를 찾아서 차례로 맨앞/뒤로 보내기
+학습내용정리 : https://isjiji.tistory.com/124</br>
+가장 큰수 혹은 작은수를 찾아서 차례로 맨앞/뒤로 보내기</br>
 
 # 삽입정렬
 앞 배열값과 비교하며 앞으로 이동. 데이터를 뒤로 다 밀어낸다음, 마지막에 삽입
